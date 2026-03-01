@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="ro">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Adoptă un prieten - Blog & Portal de adopții</title>
+	<meta name="description" content="Blog și portal pentru adopția animalelor de companie: povești, animale disponibile și resurse." />
+	<meta name="author" content="NEGREA ADRIANA" />
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="container nav">
+			<div class="brand">
+				<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 12c0-3 2-5 4-5s4 2 4 5-2 7-4 7-4-4-4-7z" fill="#ff6b6b"/></svg>
+				<div>
+					<h1>Adoptă un prieten!</h1>
+					<div class="muted">Blog & portal de adopții</div>
+				</div>
+			</div>
+			<nav>
+				<a href="#pets">Animale</a>
+				<a href="#posts">Articole</a>
+				<a href="#despre">Despre</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<div>
+				<h2>Găsește un companion iubitor astăzi</h2>
+				<p>Descoperă poveștile de adopție, animale disponibile și cum poți ajuta. Fiecare adoptie schimbă o viață.</p>
+				<a class="cta" href="#pets">Vezi animalele</a>
+
+				<div class="search">
+					<input id="searchInput" type="search" placeholder="Caută după nume sau rasă..." />
+					<button id="searchBtn">Caută</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="pets">
+			<h2>Animale disponibile</h2>
+		<div class="grid" id="petsGrid">
+			<!-- sample cards -->
+				    <article class="card" data-name="Mishu" data-breed="Pisică Europeană" data-city="Iași" data-age="2" data-sex="Mascul" data-size="Mic" data-vaccinated="Da" data-sterilized="Da" data-personality="Calmă, obișnuită cu oameni și alte animale">
+					    <img src="assets/images/mishu.jpg" alt="Mishu - Pisică">
+					<div class="meta"><div class="name">Mishu</div><div class="muted">Mascul • 2 ani</div></div>
+					<div class="details muted"><span><strong>Rasă:</strong> Pisică Europeană</span> • <span><strong>Vârstă:</strong> 2 ani</span> • <span><strong>Mărime:</strong> Mic</span></div>
+					<p class="muted">Calmă, obișnuită cu oameni și alte animale.</p>
+					<div class="actions">
+						<button class="btn outline" data-action="more">Mai multe</button>
+						<button class="btn primary">Adoptă</button>
+					</div>
+			</article>
+
+			<!-- adăugăm 3 iepuri -->
+			<article class="card" data-name="Bobi" data-city="București" data-age="3" data-sex="Mascul" data-size="Mediu" data-vaccinated="Da" data-sterilized="Nu" data-personality="Robust și liniștit, preferă spații verzi">
+					<img src="https://images.unsplash.com/photo-1535241749838-299277b6305f?q=80&w=600&auto=format&fit=crop" alt="Bobi - Iepure">
+					<div class="meta"><div class="name">Bobi</div><div class="muted">Mascul • 3 ani</div></div>
+					<div class="details muted"><span><strong>Vârstă:</strong> 3 ani</span> • <span><strong>Mărime:</strong> Mediu</span></div>
+					<p class="muted">Robust și liniștit, preferă spații verzi.</p>
+					<div class="actions">
+						<button class="btn outline" data-action="more">Mai multe</button>
+						<button class="btn primary">Adoptă</button>
+					</div>
+				</article>
+
+				<!-- adăugăm 2 pisici -->
+				<article class="card" data-name="Mia" data-breed="Europeană" data-city="Cluj" data-age="2" data-sex="Femelă" data-size="Mic" data-vaccinated="Da" data-sterilized="Da" data-personality="Afecțuoasă și jucăușă, obișnuită cu copii">
+						<img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=600&auto=format&fit=crop" alt="Mia - Pisică">
+						<div class="meta"><div class="name">Mia</div><div class="muted">Femelă • 2 ani</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Europeană</span> • <span><strong>Vârstă:</strong> 2 ani</span> • <span><strong>Mărime:</strong> Mic</span></div>
+						<p class="muted">Afecțuoasă și jucăușă, obișnuită cu copii.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+					</article>
+
+				<article class="card" data-name="Nico" data-breed="Pug" data-city="Timișoara" data-age="1" data-sex="Mascul" data-size="Mic" data-vaccinated="Da" data-sterilized="Nu" data-personality="Vocal și sociabil, își dorește multă atenție">
+					<img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?q=80&w=600&auto=format&fit=crop" alt="Nico - Câine">
+					<div class="meta"><div class="name">Nico</div><div class="muted">Mascul • 1 an</div></div>
+					<div class="details muted"><span><strong>Rasă:</strong> Pug</span> • <span><strong>Vârstă:</strong> 1 an</span> • <span><strong>Mărime:</strong> Mic</span></div>
+						<p class="muted">Vocal și sociabil, își dorește multă atenție.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+					</article>
+
+				<!-- adăugăm 2 câini -->
+				<article class="card" data-name="Rex" data-breed="Metis" data-city="Ploiești" data-age="4" data-sex="Mascul" data-size="Mare" data-vaccinated="Da" data-sterilized="Da" data-personality="Loial și protector, bun pentru familii active">
+					<img src="assets/images/rex.jpg" alt="Rex - Câine">
+						<div class="meta"><div class="name">Rex</div><div class="muted">Mascul • 4 ani</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Metis</span> • <span><strong>Vârstă:</strong> 4 ani</span> • <span><strong>Mărime:</strong> Mare</span></div>
+						<p class="muted">Loial și protector, bun pentru familii active.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+					</article>
+
+				<article class="card" data-name="Nora" data-breed="Spaniel" data-city="Sibiu" data-age="2" data-sex="Femelă" data-size="Mediu" data-vaccinated="Da" data-sterilized="Da" data-personality="Prietenă și energică, îi place joaca în aer liber">
+						<img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=600&auto=format&fit=crop" alt="Nora - Câine">
+						<div class="meta"><div class="name">Nora</div><div class="muted">Femelă • 2 ani</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Spaniel</span> • <span><strong>Vârstă:</strong> 2 ani</span> • <span><strong>Mărime:</strong> Mediu</span></div>
+						<p class="muted">Prietenă și energică, îi place joaca în aer liber.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+					</article>
+
+				<!-- +5 animale noi -->
+				<article class="card" data-name="Lila" data-breed="Maine Coon" data-city="Cluj" data-age="3" data-sex="Femelă" data-size="Mare" data-vaccinated="Da" data-sterilized="Da" data-personality="Blândă și curioasă, îndrăgostită de soare">
+					<img src="assets/images/lila.jpg.webp" alt="Lila - Pisică">
+						<div class="meta"><div class="name">Lila</div><div class="muted">Femelă • 3 ani</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Maine Coon</span> • <span><strong>Vârstă:</strong> 3 ani</span> • <span><strong>Mărime:</strong> Mare</span></div>
+						<p class="muted">Blândă, tolerantă cu copii și alte animale.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+				</article>
+
+				<article class="card" data-name="Bruno" data-breed="Husky" data-city="Brașov" data-age="2" data-sex="Mascul" data-size="Mare" data-vaccinated="Da" data-sterilized="Nu" data-personality="Energic, iubește plimbările lungi">
+					<img src="assets/images/bruno.jpg.webp" alt="Bruno - Husky">
+						<div class="meta"><div class="name">Bruno</div><div class="muted">Mascul • 2 ani</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Husky</span> • <span><strong>Vârstă:</strong> 2 ani</span> • <span><strong>Mărime:</strong> Mare</span></div>
+						<p class="muted">Prietenos, necesită activitate fizică regulată.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+				</article>
+
+				<article class="card" data-name="Coco" data-breed="Papagal" data-city="București" data-age="1" data-sex="Femelă" data-size="Mic" data-vaccinated="Nu" data-sterilized="Nu" data-personality="Vorbareț și jucăuș, îi plac fructele">
+					<img src="assets/images/coco.jpg" alt="Coco - Papagal">
+						<div class="meta"><div class="name">Coco</div><div class="muted">Femelă • 1 an</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Papagal</span> • <span><strong>Vârstă:</strong> 1 an</span> • <span><strong>Mărime:</strong> Mic</span></div>
+						<p class="muted">Socială și inteligentă, necesită îngrijire specială.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+				</article>
+
+				<article class="card" data-name="Zuzu" data-breed="Iepure" data-city="Buzău" data-age="1" data-sex="Mascul" data-size="Mic" data-vaccinated="Nu" data-sterilized="Nu" data-personality="Curios și blând, iubește legumele proaspete">
+					<img src="assets/images/zuzu.jpg.webp" alt="Zuzu - Iepure">
+						<div class="meta"><div class="name">Zuzu</div><div class="muted">Mascul • 1 an</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Iepure</span> • <span><strong>Vârstă:</strong> 1 an</span> • <span><strong>Mărime:</strong> Mic</span></div>
+						<p class="muted">Ușor de dresat, preferă spații liniștite.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+				</article>
+
+				<article class="card" data-name="Bella" data-breed="Labrador" data-city="Iași" data-age="5" data-sex="Femelă" data-size="Mare" data-vaccinated="Da" data-sterilized="Da" data-personality="Calmă și afectuoasă, ideală pentru familie">
+					<img src="assets/images/bella.jpg.webp" alt="Bella - Labrador">
+						<div class="meta"><div class="name">Bella</div><div class="muted">Femelă • 5 ani</div></div>
+						<div class="details muted"><span><strong>Rasă:</strong> Labrador</span> • <span><strong>Vârstă:</strong> 5 ani</span> • <span><strong>Mărime:</strong> Mare</span></div>
+						<p class="muted">Perfectă cu copii, se adaptează ușor la viața de familie.</p>
+						<div class="actions">
+							<button class="btn outline" data-action="more">Mai multe</button>
+							<button class="btn primary">Adoptă</button>
+						</div>
+				</article>
+
+			</div>
+		</section>
+
+		<section id="posts" class="posts">
+			<h2>Articole recente</h2>
+			<article class="post">
+				<a href="articles/article-max-poveste.html"><img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=6a4b2a7e" alt="poveste adoptie"></a>
+				<div class="text">
+					<h3><a href="articles/article-max-poveste.html">Povestea lui Max: de la adăpost la familie</a></h3>
+					<p class="muted">Cum a schimbat o adopție viața unei pisici și a unei familii.</p>
+				</div>
+			</article>
+
+			<!-- articole despre câini adăugate -->
+			<article class="post">
+				<a href="articles/article-ingrijire-generala.html"><img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=0e1a6f" alt="îngrijire câine"></a>
+				<div class="text">
+					<h3><a href="articles/article-ingrijire-generala.html">Îngrijire generală a câinelui</a></h3>
+					<p class="muted">Sfaturi despre hrană, îngrijire a blănii și activitate fizică.</p>
+				</div>
+			</article>
+
+			<article class="post">
+				<a href="articles/article-dresaj-baza.html"><img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d9b8a6d" alt="dresaj câine"></a>
+				<div class="text">
+					<h3><a href="articles/article-dresaj-baza.html">Dresaj de bază pentru câini</a></h3>
+					<p class="muted">Comenzi esențiale și metode pozitive pentru antrenament.</p>
+				</div>
+			</article>
+
+			<article class="post">
+				<a href="articles/article-sanatate-vaccinuri.html"><img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a3e1b" alt="sănătate câine"></a>
+				<div class="text">
+					<h3><a href="articles/article-sanatate-vaccinuri.html">Sănătate & vaccinuri pentru câini / pisici</a></h3>
+					<p class="muted">Informații practice despre vaccinări și prevenție.</p>
+				</div>
+			</article>
+
+			<article class="post">
+				<a href="articles/article-pregatire-casa.html"><img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=5b3b4b1a" alt="îngrijire animal"></a>
+				<div class="text">
+					<h3><a href="articles/article-pregatire-casa.html">Ghid: Pregătirea casei pentru un animal adoptat</a></h3>
+					<p class="muted">Sfaturi practice pentru primii 30 de zile: spațiu, echipamente, alimentație, adaptare și vizită la veterinar.</p>
+				</div>
+			</article>
+		</section>
+
+		<section id="despre" style="margin-top:28px">
+			<h2>Despre noi</h2>
+			<p class="muted">Suntem o comunitate dedicată salvării și plasării animalelor în familia potrivită. Credem că fiecare animal merită o viață plină de siguranță și afecțiune, iar misiunea noastră este să transformăm suferința în speranță. Colaborăm cu adăposturi locale, medici veterinari și voluntari pentru a oferi sprijin complet: de la îngrijirea medicală și recuperarea animalelor aflate în nevoie, până la consilierea familiilor care își doresc să adopte.</p>
+			<p class="muted">Pentru noi, adopția nu este doar un gest de bunătate, ci un angajament pe termen lung. De aceea, promovăm constant responsabilitatea și educăm comunitatea despre importanța respectului față de animale. Organizăm campanii de conștientizare și activități prin care încurajăm implicarea oamenilor, astfel încât fiecare patruped să aibă șansa la un nou început.</p>
+			<p class="muted">Valorile noastre sunt clare: empatie, transparență și colaborare. Fiecare poveste de succes – un câine sau o pisică salvată și integrată într-o familie iubitoare – ne motivează să continuăm și să credem că împreună putem construi o lume mai bună pentru toate ființele.</p>
+			<p class="muted">📌 Nu doar salvăm animale, ci creăm legături de suflet și oferim o nouă șansă la viață.</p>
+		</section>
+
+		<section id="contact" style="margin-top:28px">
+			<h2>Contact & Informații</h2>
+			<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:24px">
+				<div>
+					<h3 style="margin-top:0">Contactează-ne</h3>
+					<form id="contactForm" style="display:flex;flex-direction:column;gap:12px">
+						<div>
+							<label style="display:block;margin-bottom:4px;font-weight:500">Nume *</label>
+							<input type="text" name="name" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+						</div>
+						<div>
+							<label style="display:block;margin-bottom:4px;font-weight:500">Email *</label>
+							<input type="email" name="email" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+						</div>
+						<div>
+							<label style="display:block;margin-bottom:4px;font-weight:500">Telefon</label>
+							<input type="tel" name="phone" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+						</div>
+						<div>
+							<label style="display:block;margin-bottom:4px;font-weight:500">Mesaj *</label>
+							<textarea name="message" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box;min-height:100px;font-family:inherit"></textarea>
+						</div>
+						<button type="submit" class="btn primary">Trimite mesaj</button>
+					</form>
+				</div>
+				<div>
+					<h3 style="margin-top:0">Informații</h3>
+					<div style="display:flex;flex-direction:column;gap:16px">
+						<div>
+							<strong>Locație</strong>
+							<p class="muted">Str. Fragilor nr. 42<br>700001 Iași, România</p>
+						</div>
+						<div>
+							<strong>Telefon</strong>
+							<p class="muted"><a href="tel:+40731124975" style="color:#ff6b6b;text-decoration:none">0731124975</a></p>
+						</div>
+						<div>
+							<strong>Email</strong>
+							<p class="muted"><a href="mailto:anairda54@yahoo.com" style="color:#ff6b6b;text-decoration:none">anairda54@yahoo.com</a></p>
+						</div>
+						<div>
+							<strong>Program</strong>
+							<p class="muted">Luni - Duminică: 10:00 - 18:00<br>Vizite pe programare</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+					<div class="footer-inner">
+					<div>
+						<strong>Adoptă un prieten</strong>
+						<div class="muted">Str. Fragilor, Iași • anairda54@yahoo.com</div>
+						<div class="muted">Proprietar: NEGREA ADRIANA</div>
+					</div>
+				<div style="display:flex;gap:8px;align-items:center">
+					<a class="btn outline" href="#contact">Contact</a>
+					<button class="btn primary" id="donateBtn">Donează</button>
+				</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+
+	<!-- modal pentru detalii animal -->
+	<div id="modal" class="modal" role="dialog" aria-hidden="true">
+		<div class="dialog" role="document">
+			<button id="closeModal" style="float:right;border:0;background:transparent;font-size:18px;cursor:pointer">✕</button>
+			<div id="modalContent"></div>
+		</div>
+	</div>
+
+	<!-- modal pentru donatie -->
+	<div id="donationModal" class="modal" role="dialog" aria-hidden="true">
+		<div class="dialog" role="document">
+			<button id="closeDonationModal" style="float:right;border:0;background:transparent;font-size:18px;cursor:pointer">✕</button>
+			<div style="max-width:500px">
+				<h2 style="margin-top:0">Fă o donație</h2>
+				<p class="muted">Ajută-ne să salvezi mai multe animale! Fiecare donație contează și merge direct în îngrijirea și medicamentele animalelor.</p>
+				
+				<form id="donationForm" style="display:flex;flex-direction:column;gap:12px;margin-top:20px">
+					<div>
+						<label style="display:block;margin-bottom:8px;font-weight:500">Alege suma:</label>
+						<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+							<button type="button" class="donation-amount" data-amount="10" style="padding:12px;border:2px solid #ddd;background:white;border-radius:4px;cursor:pointer;font-weight:500">10 RON</button>
+							<button type="button" class="donation-amount" data-amount="25" style="padding:12px;border:2px solid #ddd;background:white;border-radius:4px;cursor:pointer;font-weight:500">25 RON</button>
+							<button type="button" class="donation-amount" data-amount="50" style="padding:12px;border:2px solid #ddd;background:white;border-radius:4px;cursor:pointer;font-weight:500">50 RON</button>
+							<button type="button" class="donation-amount" data-amount="100" style="padding:12px;border:2px solid #ddd;background:white;border-radius:4px;cursor:pointer;font-weight:500">100 RON</button>
+						</div>
+					</div>
+					
+					<div id="customAmountDiv" style="display:none">
+						<label style="display:block;margin-bottom:4px;font-weight:500">Suma personalizată (RON)</label>
+						<input type="number" id="customAmount" min="1" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+					</div>
+					
+					<div>
+						<label style="display:block;margin-bottom:4px;font-weight:500">Nume *</label>
+						<input type="text" name="donorName" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+					</div>
+					<div>
+						<label style="display:block;margin-bottom:4px;font-weight:500">Email *</label>
+						<input type="email" name="donorEmail" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+					</div>
+					
+					<div style="background:#f0f9ff;padding:12px;border-radius:4px;border-left:4px solid #ff6b6b">
+						<p style="margin:0;font-size:14px"><strong>Suma de donație:</strong> <span id="donationAmount">0</span> RON</p>
+					</div>
+					
+					<div style="display:flex;gap:8px">
+						<button type="submit" class="btn primary">Confirmă donația</button>
+						<button type="button" class="btn outline" id="cancelDonation">Anulează</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// căutare simplă
+		const searchInput = document.getElementById('searchInput');
+		const searchBtn = document.getElementById('searchBtn');
+		const grid = document.getElementById('petsGrid');
+
+		function filterPets() {
+			const q = searchInput.value.trim().toLowerCase();
+			const cards = grid.querySelectorAll('.card');
+			cards.forEach(card => {
+				const name = card.dataset.name.toLowerCase();
+				const breed = (card.dataset.breed||'').toLowerCase();
+				const city = (card.dataset.city||'').toLowerCase();
+				const match = !q || name.includes(q) || breed.includes(q) || city.includes(q);
+				card.style.display = match ? '' : 'none';
+			});
+		}
+		searchBtn.addEventListener('click', filterPets);
+		searchInput.addEventListener('keydown', e=>{ if(e.key==='Enter') filterPets() });
+
+		// contact form
+		const contactForm = document.getElementById('contactForm');
+		contactForm.addEventListener('submit', function(e) {
+			e.preventDefault();
+			const formData = new FormData(contactForm);
+			const data = Object.fromEntries(formData);
+			const message = `Mesaj din contact:\n\nNume: ${data.name}\nEmail: ${data.email}\nTelefon: ${data.phone || 'N/A'}\n\nMesaj:\n${data.message}`;
+			console.log(message);
+			alert(`Mulțumim! Mesajul tău a fost primit. Vom răspunde la ${data.email} în curând!`);
+			contactForm.reset();
+		});
+
+		// donation modal
+		const donateBtn = document.getElementById('donateBtn');
+		const donationModal = document.getElementById('donationModal');
+		const closeDonationModal = document.getElementById('closeDonationModal');
+		const donationForm = document.getElementById('donationForm');
+		const cancelDonation = document.getElementById('cancelDonation');
+		const customAmountDiv = document.getElementById('customAmountDiv');
+		const customAmount = document.getElementById('customAmount');
+		const donationAmountDisplay = document.getElementById('donationAmount');
+		let selectedDonationAmount = 0;
+
+		donateBtn.addEventListener('click', function() {
+			donationModal.classList.add('show');
+			donationModal.setAttribute('aria-hidden','false');
+			selectedDonationAmount = 0;
+			donationAmountDisplay.textContent = '0';
+			customAmountDiv.style.display = 'none';
+		});
+
+		const donationButtons = document.querySelectorAll('.donation-amount');
+		donationButtons.forEach(btn => {
+			btn.addEventListener('click', function(e) {
+				e.preventDefault();
+				donationButtons.forEach(b => b.style.borderColor = '#ddd');
+				this.style.borderColor = '#ff6b6b';
+				selectedDonationAmount = parseInt(this.dataset.amount);
+				donationAmountDisplay.textContent = selectedDonationAmount;
+				customAmountDiv.style.display = 'none';
+			});
+		});
+
+		// Add custom amount option
+		const customBtn = document.createElement('button');
+		customBtn.type = 'button';
+		customBtn.className = 'donation-amount';
+		customBtn.textContent = 'Alt...';
+		customBtn.style.cssText = 'padding:12px;border:2px solid #ddd;background:white;border-radius:4px;cursor:pointer;font-weight:500';
+		customBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			donationButtons.forEach(b => b.style.borderColor = '#ddd');
+			this.style.borderColor = '#ff6b6b';
+			customAmountDiv.style.display = 'block';
+			customAmount.focus();
+		});
+		donationButtons[0].parentElement.appendChild(customBtn);
+
+		customAmount.addEventListener('change', function() {
+			if(this.value && this.value > 0) {
+				selectedDonationAmount = parseInt(this.value);
+				donationAmountDisplay.textContent = selectedDonationAmount;
+			}
+		});
+
+		donationForm.addEventListener('submit', function(e) {
+			e.preventDefault();
+			if(selectedDonationAmount <= 0) {
+				alert('Te rog alege o sumă de donație!');
+				return;
+			}
+			const formData = new FormData(donationForm);
+			const data = Object.fromEntries(formData);
+			const message = `Donație nouă:\n\nNume: ${data.donorName}\nEmail: ${data.donorEmail}\nSumă: ${selectedDonationAmount} RON`;
+			console.log(message);
+			alert(`Mulțumim pentru donația de ${selectedDonationAmount} RON, ${data.donorName}! Ți-am trimis confirmarea pe email.`);
+			donationModal.classList.remove('show');
+			donationModal.setAttribute('aria-hidden','true');
+			donationForm.reset();
+			selectedDonationAmount = 0;
+			donationAmountDisplay.textContent = '0';
+		});
+
+		closeDonationModal.addEventListener('click', function() {
+			donationModal.classList.remove('show');
+			donationModal.setAttribute('aria-hidden','true');
+		});
+
+		cancelDonation.addEventListener('click', function() {
+			donationModal.classList.remove('show');
+			donationModal.setAttribute('aria-hidden','true');
+		});
+
+		donationModal.addEventListener('click', function(e) {
+			if(e.target === donationModal) {
+				donationModal.classList.remove('show');
+				donationModal.setAttribute('aria-hidden','true');
+			}
+		});
+
+		// modal detalii
+		const modal = document.getElementById('modal');
+		const modalContent = document.getElementById('modalContent');
+		const closeModal = document.getElementById('closeModal');
+		let selectedAnimal = null;
+
+		grid.addEventListener('click', e=>{
+			const adoptBtn = e.target.closest('button.btn.primary');
+			const moreBtn = e.target.closest('button[data-action="more"]');
+			const card = e.target.closest('.card');
+			
+			if(!card) return;
+			
+			const name = card.dataset.name;
+			const breed = card.dataset.breed;
+			const city = card.dataset.city;
+			const img = card.querySelector('img').src;
+			selectedAnimal = name;
+
+			if(adoptBtn) {
+				// Adoption button clicked
+				modalContent.innerHTML = `
+					<div style="max-width:500px">
+						<h2 style="margin-top:0">Formular de adopție - ${name}</h2>
+						<p class="muted">Completează formularul pentru a solicita adopția lui <strong>${name}</strong></p>
+						<form id="adoptionForm" style="display:flex;flex-direction:column;gap:12px">
+							<div>
+								<label style="display:block;margin-bottom:4px;font-weight:500">Nume complet *</label>
+								<input type="text" name="fullname" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+							</div>
+							<div>
+								<label style="display:block;margin-bottom:4px;font-weight:500">Email *</label>
+								<input type="email" name="email" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+							</div>
+							<div>
+								<label style="display:block;margin-bottom:4px;font-weight:500">Telefon *</label>
+								<input type="tel" name="phone" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+							</div>
+							<div>
+								<label style="display:block;margin-bottom:4px;font-weight:500">Oraș *</label>
+								<input type="text" name="city" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+							</div>
+							<div>
+								<label style="display:block;margin-bottom:4px;font-weight:500">De ce dorești să adopți ${name}?</label>
+								<textarea name="reason" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box;min-height:80px;font-family:inherit"></textarea>
+							</div>
+							<div style="display:flex;gap:8px">
+								<button type="submit" class="btn primary">Trimite cerere</button>
+								<button type="button" class="btn outline" id="cancelForm">Anulează</button>
+							</div>
+						</form>
+					</div>
+				`;
+				modal.classList.add('show');
+				modal.setAttribute('aria-hidden','false');
+				
+				const form = document.getElementById('adoptionForm');
+				const cancelBtn = document.getElementById('cancelForm');
+				
+				form.addEventListener('submit', function(e) {
+					e.preventDefault();
+					const formData = new FormData(form);
+					const data = Object.fromEntries(formData);
+					const message = `Noua cerere de adopție pentru ${selectedAnimal}:\n\nNume: ${data.fullname}\nEmail: ${data.email}\nTelefon: ${data.phone}\nOraș: ${data.city}\n\nMotivație:\n${data.reason}`;
+					console.log(message);
+					alert(`Mulțumim! Cererea ta pentru adopția lui ${selectedAnimal} a fost trimisă. Vom lua legătura cu tine în curând!`);
+					modal.classList.remove('show');
+					modal.setAttribute('aria-hidden','true');
+				});
+				
+				cancelBtn.addEventListener('click', function() {
+					modal.classList.remove('show');
+					modal.setAttribute('aria-hidden','true');
+				});
+			} else if(moreBtn) {
+				// More info button clicked
+				modalContent.innerHTML = `
+					<div style="display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap">
+						<img src="${img}" alt="${name}" style="width:280px;height:200px;object-fit:cover;border-radius:8px" />
+						<div style="flex:1;min-width:200px">
+							<h2 style="margin-top:0">${name}</h2>
+							<div class="muted">${breed} • ${city}</div>
+							<p style="margin-top:12px">Acest animal este în grija adăpostului nostru și este disponibil pentru adopție. Pentru mai multe informații sau pentru a programa o vizită, contactează-ne prin formularul de contact.</p>
+							<div style="margin-top:12px;display:flex;gap:8px">
+								<button class="btn primary" id="adoptNow">Adoptă</button>
+								<button class="btn outline" id="contactShelter">Contact adăpost</button>
+							</div>
+						</div>
+					</div>
+				`;
+				modal.classList.add('show');
+				modal.setAttribute('aria-hidden','false');
+				
+				const adoptNow = document.getElementById('adoptNow');
+				const contactShelter = document.getElementById('contactShelter');
+				
+				adoptNow.addEventListener('click', function() {
+					// Trigger adopt form
+					const adoptBtnInGrid = card.querySelector('button.btn.primary');
+					adoptBtnInGrid.click();
+				});
+				
+				contactShelter.addEventListener('click', function() {
+					// Show contact form for this specific animal
+					modalContent.innerHTML = `
+						<div style="max-width:500px">
+							<h2 style="margin-top:0">Contact - Informații despre ${name}</h2>
+							<p class="muted">Completează formularul pentru a contacta adăpostul despre <strong>${name}</strong></p>
+							<form id="shelterContactForm" style="display:flex;flex-direction:column;gap:12px">
+								<div>
+									<label style="display:block;margin-bottom:4px;font-weight:500">Nume *</label>
+									<input type="text" name="name" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+								</div>
+								<div>
+									<label style="display:block;margin-bottom:4px;font-weight:500">Email *</label>
+									<input type="email" name="email" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+								</div>
+								<div>
+									<label style="display:block;margin-bottom:4px;font-weight:500">Telefon</label>
+									<input type="tel" name="phone" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+								</div>
+								<div>
+									<label style="display:block;margin-bottom:4px;font-weight:500">Interes *</label>
+									<select name="interest" required style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box">
+										<option value="">Alege una</option>
+										<option value="vizita">Vreau să vizitez animalul</option>
+										<option value="informatii">Vreau mai multe informații</option>
+										<option value="program">Întrebări despre program</option>
+										<option value="altele">Altele</option>
+									</select>
+								</div>
+								<div>
+									<label style="display:block;margin-bottom:4px;font-weight:500">Mesaj</label>
+									<textarea name="message" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;font-size:14px;box-sizing:border-box;min-height:80px;font-family:inherit"></textarea>
+								</div>
+								<div style="display:flex;gap:8px">
+									<button type="submit" class="btn primary">Trimite mesaj</button>
+									<button type="button" class="btn outline" id="backToInfo">Înapoi</button>
+								</div>
+							</form>
+						</div>
+					`;
+					
+					const shelterContactForm = document.getElementById('shelterContactForm');
+					const backToInfo = document.getElementById('backToInfo');
+					
+					shelterContactForm.addEventListener('submit', function(e) {
+						e.preventDefault();
+						const formData = new FormData(shelterContactForm);
+						const data = Object.fromEntries(formData);
+						const message = `Contact despre ${name}:\n\nNume: ${data.name}\nEmail: ${data.email}\nTelefon: ${data.phone || 'N/A'}\nInteres: ${data.interest}\n\nMesaj:\n${data.message || 'N/A'}`;
+						console.log(message);
+						alert(`Mulțumim! Mesajul tău despre ${name} a fost primit. Vom răspunde la ${data.email} în curând!`);
+						modal.classList.remove('show');
+						modal.setAttribute('aria-hidden','true');
+					});
+					
+					backToInfo.addEventListener('click', function() {
+						// Re-trigger the more info button to go back
+						moreBtn.click();
+					});
+				});
+			}
+		});
+
+		closeModal.addEventListener('click', ()=>{ modal.classList.remove('show'); modal.setAttribute('aria-hidden','true') });
+		modal.addEventListener('click', e=>{ if(e.target===modal) { modal.classList.remove('show'); modal.setAttribute('aria-hidden','true') } });
+	</script>
+</body>
+</html>
